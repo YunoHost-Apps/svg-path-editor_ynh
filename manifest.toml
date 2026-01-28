@@ -13,7 +13,6 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "Apache-2.0"
-website = "https://example.com"
 demo = "https://yqnn.github.io/svg-path-editor/"
 code = "https://github.com/Yqnn/svg-path-editor"
 
