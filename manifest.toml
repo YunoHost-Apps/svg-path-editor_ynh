@@ -1,0 +1,62 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "svg-path-editor"
+name = "SVG Editor"
+description.en = "Online editor to create and manipulate SVG paths"
+description.fr = "Éditeur en ligne pour créer et manipuler des chemins SVG"
+
+version = "2026.01.28~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "Apache-2.0"
+website = "https://example.com"
+demo = "https://yqnn.github.io/svg-path-editor/"
+code = "https://github.com/Yqnn/svg-path-editor"
+
+
+[integration]
+yunohost = ">= 12.1.38"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/Yqnn/svg-path-editor/archive/c8da5042c46f7362658244a211d570e9adfde7b7.tar.gz"
+    sha256 = "a51084575aeaec8d6868274b9cbf35e2fce22d9e39c575cb9d6782efcfd04ede"
+
+    autoupdate.upstream = "https://github.com/Yqnn/svg-path-editor"
+    autoupdate.strategy = "latest_github_commit"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.nodejs]
+    version = "22"
+    
