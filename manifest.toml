@@ -7,7 +7,7 @@ name = "SVG Editor"
 description.en = "Online editor to create and manipulate SVG paths"
 description.fr = "Éditeur en ligne pour créer et manipuler des chemins SVG"
 
-version = "2026.06.04~ynh1"
+version = "2026.06.18~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,8 +43,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Yqnn/svg-path-editor/archive/dc04b60994527861ecd055b46e3564bedce86c9c.tar.gz"
-    sha256 = "fdf8ad8568a3b02c5c467eb1001b553b1000bb7c494d5787e9938dc938dfd03e"
+    url = "https://github.com/Yqnn/svg-path-editor/archive/937d75a83b6be2bdda11d02b9b3594841315223a.tar.gz"
+    sha256 = "2b525c138adf748cb04eee6e6aad93f364cb93f6b7c559809549f58de3f69d28"
 
     autoupdate.upstream = "https://github.com/Yqnn/svg-path-editor"
     autoupdate.strategy = "latest_github_commit"
